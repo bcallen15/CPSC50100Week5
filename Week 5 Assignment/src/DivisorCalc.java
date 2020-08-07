@@ -1,5 +1,5 @@
 //********************************************************
-//	GreatestCommonDenom.java			Author: Ben Callen
+//	DivisorCalc.java			Author: Ben Callen
 //
 //	Uses Euclid's algorithm to find the largest common
 //	divisor of two positive integers
@@ -28,9 +28,11 @@ public class DivisorCalc {
 		System.out.println("Enter the second number: ");
 		num2 = number.nextInt();
 		
-		greatestCommonDivisor = gcd(num1,num2);
+		greatestCommonDivisor = gcd(num1,num2); //calls method to calculate GCD
 		
 		System.out.println("The greatest common divisor of " + num1 + " and " + num2 + " = " + greatestCommonDivisor);
+		
+		number.close();
 
 	}
 
